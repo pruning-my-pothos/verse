@@ -1,0 +1,217 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1a5fd0;
+  --ifm-color-primary-dark: #164fb0;
+  --ifm-color-primary-darker: #13459c;
+  --ifm-color-primary-darkest: #0f397e;
+  --ifm-color-primary-light: #2c6fe0;
+  --ifm-color-primary-lighter: #3a7ae8;
+  --ifm-color-primary-lightest: #5f94f0;
+  --ifm-font-family-base: 'IBM Plex Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    system-ui, sans-serif;
+  --ifm-heading-font-family: 'IBM Plex Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    system-ui, sans-serif;
+  --ifm-container-width: 1100px;
+  --ifm-container-width-xl: 1200px;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(16, 44, 87, 0.08);
+  --ifm-hr-border-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #5f94f0;
+  --ifm-color-primary-dark: #467fef;
+  --ifm-color-primary-darker: #3775ee;
+  --ifm-color-primary-darkest: #235dd3;
+  --ifm-color-primary-light: #77a7f2;
+  --ifm-color-primary-lighter: #8ab4f5;
+  --ifm-color-primary-lightest: #a6c7f8;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+}
+
+body {
+  background: #f7f9fb;
+}
+
+[data-theme='dark'] body {
+  background: #0c111c;
+}
+
+.main-wrapper {
+  padding: 0 0 2rem;
+}
+
+.navbar {
+  backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.navbar__items .navbar__link {
+  font-weight: 600;
+}
+
+.footer--dark {
+  background: #0f1829;
+}
+
+.docPage {
+  background: linear-gradient(180deg, #f7f9fb 0%, #f0f4f9 100%);
+}
+
+[data-theme='dark'] .docPage {
+  background: linear-gradient(180deg, #0c111c 0%, #0a0f19 100%);
+}
+
+.docMainContainer {
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+.docItemContainer {
+  background: #fff;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 18px;
+  box-shadow: 0 14px 48px rgba(0, 0, 0, 0.04);
+  padding: 2rem 2rem 2.5rem;
+}
+
+[data-theme='dark'] .docItemContainer {
+  background: #0f1829;
+  border: 1px solid #1a2742;
+  box-shadow: 0 14px 48px rgba(0, 0, 0, 0.5);
+}
+
+.markdown {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  letter-spacing: -0.01em;
+}
+
+.markdown p {
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .markdown p {
+  color: #d7deed;
+}
+
+.markdown ul,
+.markdown ol {
+  line-height: 1.7;
+  padding-left: 1.2rem;
+}
+
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background: rgba(26, 95, 208, 0.06);
+  padding: 0.8rem 1rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .markdown blockquote {
+  background: rgba(95, 148, 240, 0.08);
+  color: #d7deed;
+  border-left-color: #5f94f0;
+}
+
+.markdown pre {
+  background: #0f1829;
+  border: 1px solid #0d1421;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+[data-theme='dark'] .markdown pre {
+  background: #0a0f19;
+  border-color: #121a2a;
+}
+
+.markdown code {
+  border-radius: 6px;
+}
+
+.menu__link {
+  border-radius: 8px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.menu__link:hover {
+  background: rgba(26, 95, 208, 0.1);
+}
+
+.table-of-contents__link {
+  line-height: 1.4;
+}
+
+.table-of-contents {
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  padding-left: 1rem;
+}
+
+[data-theme='dark'] .table-of-contents {
+  border-left-color: #1f2b40;
+}
+
+.pagination-nav__link {
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme='dark'] .pagination-nav__link {
+  border-color: #1a2742;
+}
+
+.theme-doc-breadcrumbs {
+  margin-bottom: 0.5rem;
+}
+
+.docTypePill {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 999px;
+  background: rgba(26, 95, 208, 0.08);
+  color: var(--ifm-color-emphasis-900);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.docTypePill__label {
+  color: var(--ifm-color-primary);
+}
+
+.docTypePill__desc {
+  color: var(--ifm-color-emphasis-700);
+  font-weight: 500;
+}
+
+[data-theme='dark'] .docTypePill {
+  border-color: #1a2742;
+  background: rgba(95, 148, 240, 0.12);
+  color: #d7deed;
+}
+
+[data-theme='dark'] .docTypePill__desc {
+  color: #c8d5eb;
+}
